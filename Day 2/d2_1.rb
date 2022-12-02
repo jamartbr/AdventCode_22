@@ -1,0 +1,1 @@
+p File.open('input2.txt').readlines.map(&:chomp).map{["B X","C Y","A Z","A X","B Y","C Z","C X","A Y","B Z"].index(_1)+1}.sum
