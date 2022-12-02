@@ -1,1 +1,1 @@
-p File.open('input1.txt').readlines.join.split("\n\n").map{|x|x.split("\n").map(&:to_i).sum}.sort.reverse[0]
+p File.open('input1.txt').readlines.join.split("\n\n").map{_1.split("\n").map(&:to_i).sum}.max
