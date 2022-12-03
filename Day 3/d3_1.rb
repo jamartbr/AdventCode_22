@@ -1,0 +1,1 @@
+p File.open('prueba3.txt').readlines.map(&:chomp).map{|l|a,b=l.chars.each_slice(l.size/2).to_a.map(&:join);x=a.delete(a.delete(b))[0].ord;l=x+(x>'Z'.ord ? 1-'a'.ord : 27-'A'.ord)}.sum
