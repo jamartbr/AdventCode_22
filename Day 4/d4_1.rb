@@ -1,0 +1,1 @@
+p File.open('input4.txt').readlines.map{|a|a.chomp.split(',').map{|x|x.split('-')}.map{(_1.to_i.._2.to_i).to_a}}.select{(_1&_2).size==[_1.size,_2.size].min}.size
