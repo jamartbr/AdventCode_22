@@ -1,1 +1,1 @@
-File.open('input6.txt').readlines.inject(0){|i,n|while n[i..i+13].chars.uniq.size!=14 do i+=1 end; p i+14}
+p File.open('input6.txt').readlines.reduce(0){|i,n|while n[i..i+13].chars.uniq.size!=14 do i+=1 end;i+14}
